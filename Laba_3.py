@@ -9,19 +9,11 @@ for line in file:
 
 max = int(sort[len(sort)-1][0])
 
-
 def Work():
 	global accessibility
 	answer = input('Продолжить? Y/N \n')
 	if answer.lower() == 'n':
 		accessibility = False
-
-
-def Find():
-	path = input('Введите папку: ')
-	count = str(len(next(os.walk(path))))
-	print(count)
-
 
 def Sort():
 	global sort
@@ -34,6 +26,10 @@ def Sort():
 				new_value[a+1] = line
 	return new_value
 
+def Find():
+	path = input('Введите папку: ')
+	count = str(len(next(os.walk(path))))
+	print(count)
 
 def Change_stock():
     global max
@@ -68,9 +64,6 @@ def Change_stock():
 				else:
 					new_value[a][3] = 0
 	return new_value
-
-
-
 
 def Work():
 	global accessibility
