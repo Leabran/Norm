@@ -31,7 +31,7 @@ def Find():
 	count = str(len(next(os.walk(path))))
 	print(count)
 
-def Change_stock():
+def Change():
     global max
     new_value = Sort()
     id = []
